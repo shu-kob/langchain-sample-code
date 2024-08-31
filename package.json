@@ -1,0 +1,17 @@
+{
+  "name": "langchain-sample-code",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@langchain/community": "^0.2.31",
+    "cheerio": "^1.0.0",
+    "html-to-text": "^9.0.5",
+    "ts-node": "^10.9.2"
+  }
+}
