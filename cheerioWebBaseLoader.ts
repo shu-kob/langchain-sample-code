@@ -2,6 +2,8 @@ import { CheerioWebBaseLoader } from '@langchain/community/document_loaders/web/
 import { RecursiveCharacterTextSplitter } from '@langchain/textsplitters'
 import { HtmlToTextTransformer } from '@langchain/community/document_transformers/html_to_text'
 
+const url = process.argv[2]
+
 async function webLoad (url: string) {
   const loader = new CheerioWebBaseLoader(url)
   const docs = await loader.load()
@@ -13,4 +15,4 @@ async function webLoad (url: string) {
   console.log(newDocuments)
 }
 
-webLoad('https://shu-kob.hateblo.jp/entry/2024/08/29/234143')
+webLoad(url)
