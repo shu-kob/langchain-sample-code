@@ -9,7 +9,9 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "@langchain/community": "^0.2.31",
     "cheerio": "^1.0.0",
+    "html-to-text": "^9.0.5",
     "ts-node": "^10.9.2"
   }
 }
