@@ -2,12 +2,17 @@ import { GithubRepoLoader } from '@langchain/community/document_loaders/web/gith
 
 const url = process.argv[2]
 
-async function readSorceCodesFromGithub(url: string) {
+const branch = process.argv[3] || "main"
+
+const gitHubAccessToken = process.env.GITHUB_ACCESS_TOKEN || ""
+
+async function readSorceCodesFromGithub(url: string, branch: string, gitHubAccessToken: string) {
 
   const loader = new GithubRepoLoader(
     url,
     {
-      branch: "main", // Defaultブランチが "master" でないか注意。他のブランチも選択可能
+      branch: branch,
+      accessToken: gitHubAccessToken,
       recursive: true,
       processSubmodules: true,
       unknown: "warn",
@@ -21,4 +26,4 @@ async function readSorceCodesFromGithub(url: string) {
   }
 };
 
-readSorceCodesFromGithub(url)
+readSorceCodesFromGithub(url, branch, gitHubAccessToken)
