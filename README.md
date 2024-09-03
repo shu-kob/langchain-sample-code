@@ -1,7 +1,7 @@
 # langchain-sample-code
 
 - 使い方はこちら
-  - https://speakerdeck.com/shukob/langchaindewebsaitononei-rong-qu-de-yagithubsosukodoqu-de?
+  - https://speakerdeck.com/shukob/langchaindewebsaitononei-rong-qu-de-yagithubsosukodoqu-de
 
 ## Webサイトの情報取得
 
